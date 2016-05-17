@@ -1,0 +1,5 @@
+alias ll='ls -la'
+alias lh='ls -lah'
+alias ...='cd ../..'
+alias g='git'
+alias tmux='TERM=xterm-256color tmux'

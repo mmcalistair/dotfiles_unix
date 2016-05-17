@@ -1,0 +1,20 @@
+# ~/.tmuxinator/dev_dirMon.yml
+
+name: dev_dirMon
+root: /Users/noname/dev/projects/python/dirMon
+
+
+windows:
+  - editor:
+      layout: c9f2,272x81,0,0{171x81,0,0,0,100x81,172,0[100x40,172,0,1,100x40,172,41,2]} 
+      panes:
+        - vim
+        - tail -f mon.log
+        - ./test_default.sh
+  - shell:
+      layout: e26b,272x81,0,0[272x40,0,0{136x40,0,0,4,135x40,137,0,8},272x40,0,41{136x40,0,41,7,135x40,137,41,9}]
+      panes:
+        - git show
+        - htop
+        - 
+        - git pull && vim todo.md
