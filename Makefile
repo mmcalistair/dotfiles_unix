@@ -1,4 +1,4 @@
-SRC=~/dotfiles_linux
+SRC = $(shell pwd)
 
 all	: clean
 	@echo SOURCE $(SRC)
@@ -10,7 +10,7 @@ all	: clean
 	ln -s $(SRC)/.zshrc ~/
 	ln -s $(SRC)/.zsh ~/
 	ln -s $(SRC)/.gitignore_global ~/
-	initRepos.sh
+	./initRepos.sh
 
 clean:
 	rm -rf ~/.vim

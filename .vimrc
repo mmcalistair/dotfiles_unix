@@ -22,6 +22,9 @@ set ignorecase
 "set guifont=Monaco:h12
 set guifont=Inconsolata\ for\ Powerline:h13
 
+set number
+set relativenumber
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
